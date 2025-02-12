@@ -23,7 +23,7 @@ public class WeatherController {
   }
 
   // TODO: given two city names, compare the length of the daylight hours and return the city with the longest day
-
+  //
   // TODO: given two city names, check which city its currently raining in
 
 }
