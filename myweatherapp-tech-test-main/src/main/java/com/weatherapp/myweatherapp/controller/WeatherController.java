@@ -92,7 +92,7 @@ public class WeatherController {
         return ResponseEntity.ok(city1 + ", " + city2);
       }
     } catch (Exception e) {
-      return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred while comparing daylight hours " + e.getMessage());
+      return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred while comparing daylight hours, " + e.getMessage());
     }
   }
 
@@ -148,7 +148,7 @@ public class WeatherController {
         return ResponseEntity.ok("Neither");
       }
     } catch (Exception e) {
-      return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred while checking rain " + e.getMessage());
+      return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred while checking rain, " + e.getMessage());
     }
   }
 }
